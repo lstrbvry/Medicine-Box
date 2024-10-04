@@ -1,0 +1,54 @@
+.major.selected{
+  border: blue 2px solid;
+}
+.link-button{
+  margin: auto;
+  display: block;
+  max-width: 144px;
+  padding: 8px;
+  background-color: rgb(192, 192, 192);
+  border: 2px solid rgb(192, 192, 192);;
+  color: rgb(255, 255, 255);
+}
+.link-button:hover{
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  box-shadow: 2px 2px 3px rgba(17, 17, 17, 0.466) ;
+  background-color:rgb(170, 170, 170) ;
+}
+.link-button a{
+  font-size: 21px;
+  display: block;
+  text-decoration: none;
+  color: unset;
+}
+.link-button a:visited{
+  color: unset;
+}
+.link-button a:hover{
+  color: unset;
+}
+
+#uncheck-button img{
+  width: 55px;
+  height:55px;
+  transition: transform .13s;
+}
+#uncheck-button img:hover{
+  transform: scale(1.1);
+}
+
+
+.sidetip{
+  background-color: #e6e6e66b;
+  color: rgb(139, 139, 139);
+  max-width: 220%;
+  position: absolute;
+  top: -34px;
+  border-radius: 3px;
+  opacity: 0;
+}
+
+#uncheck-button img:hover + .sidetip{
+  opacity: 1;
+}
